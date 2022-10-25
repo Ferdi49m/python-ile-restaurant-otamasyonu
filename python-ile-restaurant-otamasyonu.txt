@@ -1,0 +1,234 @@
+import time
+
+menü=["hamsi","levrek","çinekop","çoban salata","rakı"]
+
+hamsi=100
+levrek=80
+cinekop=90
+cobansalata=50
+rakı=150
+
+masa1=[]
+hesap1=[]
+toplam1=0
+
+masa2=[]
+hesap2=[]
+toplam2=0
+
+masa3=[]
+hesap3=[]
+toplam3=0
+while True:
+    print("hoş geldiniz efendim")
+    cevap=input("hangi masaya uturmak istersiniz:")
+    if cevap=="masa1":
+        if len(masa1)>2:
+            print("masa1 dolu")
+            break
+        while True:
+            masa1.append(cevap)
+            print("buyrun efendim menü: hamsi,levrek,çinekop,çoban salata,rakı")
+            time.sleep(2)
+            print("ne arzu edersiniz")
+            sipariş=str(input(":"))
+            if sipariş=="hamsi":
+                if hamsi not in hesap1:
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                    hesap1.append(["hamsi*",porsiyon])
+                toplam1+=hamsi*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="levrek":
+                if levrek not in hesap1:
+                    hesap1.append(["levrek*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam1+=levrek*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="çinekop":
+                if cinekop not in hesap1:
+                    hesap1.append(["cinekop*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam1+=cinekop*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="çoban salata":
+                if cobansalata not in hesap1:
+                    hesap1.append(["coban salata*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam1+=cobansalata*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="rakı":
+                if rakı not in hesap1:
+                    hesap1.append(["rakı*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam1+=rakı*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+
+            else:
+                print("malesef yok")
+         
+            
+    elif cevap=="masa2":
+        if len(masa2)>3:
+            print("masa2 dolu")
+            break
+        while True:
+            masa2.append(cevap)
+            print("buyrun efendim menü: hamsi,levrek,çinekop,çoban salata,rakı")
+            time.sleep(2)
+            print("ne arzu edersiniz")
+            sipariş=str(input(":"))
+            if sipariş=="hamsi":
+                if hamsi not in hesap1:
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                    hesap2.append(["hamsi*",porsiyon])
+                toplam2+=hamsi*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="levrek":
+                if levrek not in hesap1:
+                    hesap2.append(["levrek*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam2+=levrek*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="çinekop":
+                if cinekop not in hesap1:
+                    hesap2.append(["cinekop*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam2+=cinekop*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="çoban salata":
+                if cobansalata not in hesap1:
+                    hesap2.append(["coban salata*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam2+=cobansalata*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="rakı":
+                if rakı not in hesap1:
+                    hesap2.append(["rakı*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam2+=rakı*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+
+            else:
+                print("malesef yok")
+         
+            
+    elif cevap=="masa3":
+        if len(masa3)>4:
+            print("masa3 dolu")
+            break
+        while True:
+            masa3.append(cevap)
+            print("buyrun efendim menü: hamsi,levrek,çinekop,çoban salata,rakı")
+            time.sleep(2)
+            print("ne arzu edersiniz")
+            sipariş=str(input(":"))
+            if sipariş=="hamsi":
+                if hamsi not in hesap1:
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                    hesap3.append(["hamsi*",porsiyon])
+                toplam3+=hamsi*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="levrek":
+                if levrek not in hesap1:
+                    hesap3.append(["levrek*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam3+=levrek*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="çinekop":
+                if cinekop not in hesap1:
+                    hesap3.append(["cinekop*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam3+=cinekop*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="çoban salata":
+                if cobansalata not in hesap1:
+                    hesap1.append(["coban salata*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam3+=cobansalata*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+            elif sipariş=="rakı":
+                if rakı not in hesap1:
+                    hesap3.append(["rakı*",porsiyon])
+                    porsiyon=int(input("kaç pordiyon olsun"))
+                toplam3+=rakı*porsiyon
+                soru=input("başka isteğiniz varmı:")
+                if soru=="evet":
+                    print("tabi efendim")
+                else:
+                    break
+
+            else:
+                print("malesef yok")
+         
+            
+    elif cevap=="çıkış":
+        print("yine bekleriz")
+        break
+    else:
+        print("başka masa yok")
+
+if len(hesap1)>0:
+    print("masa1'in hesabı",hesap1)
+    print("toplam",toplam1,"tl'dir")
+if len(hesap2)>0:
+    print("masa2'in hesabı",hesap2)
+    print("toplam",toplam2,"tl'dir")
+if len(hesap3)>0:
+    print("masa3'ün hesabı",hesap3)
+    print("toplam",toplam3,"tl'dir")
